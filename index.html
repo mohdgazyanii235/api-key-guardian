@@ -3,170 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="API Key Guardian keeps every credential safe for lean fintechs—discover, score, rotate, and audit tokens without a SOC." />
-    <meta name="keywords" content="API security, fintech compliance, credential hygiene, micro SaaS" />
-    <title>API Key Guardian | Credential Hygiene for Lean FinTechs</title>
+    <meta name="description" content="Small finance teams reconcile via spreadsheets, causing 3–5 day lags, manual errors, and compliance headaches as highlighted in BDO’s 2026 FinTech predictions." />
+    <meta name="keywords" content="micro SaaS, FinTech, fintech" />
+    <title>LedgerLink | Micro FinTech SaaS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Space Grotesk', system-ui, sans-serif;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>body { font-family: 'Space Grotesk', system-ui, sans-serif; }</style>
   </head>
   <body class="bg-slate-950 text-slate-100">
     <header class="border-b border-white/10 bg-slate-900/70 backdrop-blur">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-2xl bg-gradient-to-r from-cyan-500 to-violet-500 flex items-center justify-center font-bold text-sm">AKG</div>
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-r from-cyan-500 to-violet-500 flex items-center justify-center font-bold text-sm">L</div>
           <div>
-            <p class="text-sm text-slate-400 uppercase tracking-[0.3em]">Micro SaaS</p>
-            <p class="text-lg font-semibold">API Key Guardian</p>
+            <p class="text-xs uppercase tracking-[0.5em] text-cyan-300">Micro SaaS</p>
+            <p class="text-lg font-semibold">LedgerLink</p>
           </div>
         </div>
-        <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.3em]">
-          <a href="#hero" class="hover:text-cyan-300">Home</a>
-          <a href="#features" class="hover:text-cyan-300">Product</a>
-          <a href="#architecture" class="hover:text-cyan-300">Architecture</a>
-          <a href="#plan" class="hover:text-cyan-300">Plan</a>
-          <a href="#waitlist" class="hover:text-cyan-300">Waitlist</a>
+        <div class="hidden md:flex gap-8 uppercase tracking-[0.3em] text-xs text-slate-400">
+          <a href="#plan">Plan</a>
+          <a href="#product">Product</a>
+          <a href="#tech">Technical</a>
+          <a href="#waitlist">Waitlist</a>
         </div>
       </nav>
     </header>
-    <main class="min-h-screen flex flex-col">
-      <section id="hero" class="py-20 px-6 text-center">
-        <p class="text-xs uppercase tracking-[0.6em] text-cyan-400">FinTech Credential Hygiene</p>
-        <h1 class="mt-6 text-4xl md:text-6xl font-bold text-white">Rotate every API key before an attacker learns them</h1>
-        <p class="mt-5 text-lg text-slate-300 max-w-3xl mx-auto">
-          API Key Guardian discovers every credential, scores anomalies with data from 42Crunch and Visa, and rotates or revokes risky tokens across Stripe, Plaid, AWS, and custom APIs. It takes minutes to deploy so small fintechs can defend their rails without hiring a SOC.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#waitlist" class="px-8 py-3 bg-cyan-500 text-slate-900 rounded-full font-semibold shadow-lg">Join the waitlist</a>
-          <a href="#plan" class="px-8 py-3 border border-white/40 rounded-full font-semibold">Read the business plan</a>
+    <main>
+      <section id="plan" class="px-6 py-20 text-center">
+        <p class="text-xs uppercase tracking-[0.5em] text-cyan-400">FinTech Focus</p>
+        <h1 class="mt-4 text-4xl md:text-6xl font-bold">LedgerLink</h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-3xl mx-auto">Embed settlement intelligence into every finance team so invoices reconcile before a human opens a ticket.</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#waitlist" class="px-8 py-3 rounded-full bg-cyan-500 text-slate-900 font-semibold">Join the pilot</a>
+          <a href="#product" class="px-8 py-3 rounded-full border border-white/30">Read the plan</a>
         </div>
-        <p class="mt-4 text-sm text-slate-500">Live: <a href="https://mohdgazyanii235.github.io/api-key-guardian/" class="text-cyan-300">https://mohdgazyanii235.github.io/api-key-guardian/</a></p>
       </section>
-      <section id="features" class="px-6 py-16 bg-slate-900/70">
-        <div class="max-w-6xl mx-auto grid gap-12 lg:grid-cols-3 text-left">
-          <article class="rounded-3xl bg-gradient-to-br from-cyan-600/20 to-slate-900 p-8 border border-cyan-500/30 shadow-2xl">
-            <h2 class="text-xl font-bold text-white">Discovery & Inventory</h2>
-            <p class="mt-4 text-slate-200 text-sm">
-              Connect Stripe, Plaid, AWS API Gateway, DynamoDB, or any REST endpoint to inventory API keys, service accounts, and OAuth clients. Our connectors normalize metadata and tag owners automatically.
-            </p>
+      <section id="product" class="px-6 py-16 bg-slate-900/70">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10">
+          <article class="p-8 rounded-3xl bg-slate-900/60 border border-white/10">
+            <h2 class="text-2xl font-semibold text-white">Problem</h2>
+            <p class="mt-4 text-slate-300">Small finance teams reconcile via spreadsheets, causing 3–5 day lags, manual errors, and compliance headaches as highlighted in BDO’s 2026 FinTech predictions.</p>
           </article>
-          <article class="rounded-3xl border border-white/5 p-8 bg-slate-900/60">
-            <h2 class="text-xl font-bold text-white">Risk Scoring Engine</h2>
-            <p class="mt-4 text-slate-300 text-sm">
-              Apply heuristics + light ML derived from 42Crunch vulnerabilities: abnormal geography, unusual request patterns, AI-driven credential stuffing. Scores refresh every 10 minutes with human-readable explanations.
-            </p>
-          </article>
-          <article class="rounded-3xl border border-white/5 p-8 bg-slate-900/60">
-            <h2 class="text-xl font-bold text-white">Automated Playbooks</h2>
-            <p class="mt-4 text-slate-300 text-sm">
-              Rotate keys with one click, throttle API usage, or route suspicious tokens into a sandbox. All actions are logged in a compliance PDF with citations to BDO/Visa references so auditors are satisfied.
-            </p>
+          <article class="p-8 rounded-3xl bg-gradient-to-br from-cyan-500/30 to-slate-900 border border-cyan-500/40">
+            <h2 class="text-2xl font-semibold text-white">Solution</h2>
+            <p class="mt-4 text-slate-100">LedgerLink listens to payment webhooks, auto-maps tokens to invoices, flags mismatches, and triggers auto-responses for refunds or escalations.</p>
           </article>
         </div>
       </section>
-      <section id="architecture" class="px-6 py-16">
-        <div class="max-w-6xl mx-auto grid gap-12 lg:grid-cols-2">
-          <div class="space-y-6">
-            <h2 class="text-3xl font-bold text-white">Technical Architecture</h2>
-            <p class="text-slate-300">
-              FastAPI backend + React dashboard. Data stored in Postgres, with connectors calling Stripe/ Plaid/ AWS APIs. Risk scoring combines open-source heuristics and threat intel input (42Crunch + Visa token predictions). Rotation runs via AWS SDK and gateway APIs. Deploy via Docker Compose or Fargate for rapid prototypes, keeping build costs under $100/mo per pilot.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-400">
-              <li>1️⃣ Discovery agent tails CloudWatch/Stripe logs without installing agents.</li>
-              <li>2️⃣ Score anomalies (geo drift, reuse, AI-driven requests) against 42Crunch dataset.</li>
-              <li>3️⃣ Rotate keys automatically, log actions for compliance, integrate alerts via Slack + email.</li>
-            </ul>
+      <section id="tech" class="px-6 py-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div class="p-8 rounded-3xl bg-slate-900/70 border border-white/5">
+            <h3 class="text-xl font-semibold text-white">Product & Tech</h3>
+            <p class="mt-4 text-slate-300">Connect Stripe/Adyen/PayPal, display a delta dashboard, provide compliance-ready audit logs referencing Visa and BDO data, and ship actionable remediation bots.</p>
+            <p class="mt-4 text-slate-300">Python webhook listeners + Postgres metadata, React dashboard, run on Docker Compose or Fargate for <$100/mo prototypes.</p>
           </div>
-          <div class="rounded-3xl border border-white/5 bg-slate-900/70 p-8 shadow-2xl">
-            <h3 class="text-lg font-semibold text-white">Prototype in 48h</h3>
-            <p class="mt-3 text-slate-300 text-sm">
-              Deploy connectors, run discovery, trigger a simulated attack (new IP + reused key), rotate key, export the compliance report. That sequence proves ROI and can be delivered as a service to early adopters.
-            </p>
-            <div class="mt-6 space-y-3">
-              <div class="rounded-xl bg-slate-800/60 p-4">
-                <p class="text-xs uppercase tracking-[0.4em] text-cyan-300">Experiment</p>
-                <p class="text-sm text-slate-200">Simulate AI-powered API abuse to see the risk score jump.</p>
-              </div>
-              <div class="rounded-xl bg-slate-800/60 p-4">
-                <p class="text-xs uppercase tracking-[0.4em] text-cyan-300">Rotate</p>
-                <p class="text-sm text-slate-200">Click rotate and watch the gateway log capture the new secret.</p>
-              </div>
-              <div class="rounded-xl bg-slate-800/60 p-4">
-                <p class="text-xs uppercase tracking-[0.4em] text-cyan-300">Report</p>
-                <p class="text-sm text-slate-200">Export a PDF citing Visa & BDO data to share with compliance.</p>
-              </div>
-            </div>
+          <div class="p-8 rounded-3xl bg-slate-900/70 border border-white/5">
+            <h3 class="text-xl font-semibold text-white">Model</h3>
+            <p class="mt-4 text-slate-300">Freemium (1 connector, manual actions) → Pro $8K/yr with automation, compliance concierge, and co-branded reporting.</p>
+            <p class="mt-4 text-slate-300">Publish the "Reconcile in 1 Hour" series referencing Visa’s token volume data, partner with accounting platforms for joint webinars, and offer credentialized waitlist demos.</p>
           </div>
         </div>
       </section>
-      <section id="plan" class="px-6 py-16 bg-slate-900/70">
-        <div class="max-w-6xl mx-auto space-y-6">
-          <h2 class="text-3xl font-bold text-white">Business Plan Highlights</h2>
-          <div class="grid gap-6 md:grid-cols-2">
-            <article class="rounded-3xl bg-slate-800/60 p-6 border border-cyan-500/30">
-              <h3 class="font-semibold text-white">Market</h3>
-              <p class="mt-2 text-sm text-slate-300">
-                $93.7B API security TAM (2025) growing to $135B (2029). Focus on the ~12,000 small fintechs in Stripe/ Plaid communities; 5% penetration = 600 customers at $10K/Y = $6M ARR.
-              </p>
-            </article>
-            <article class="rounded-3xl bg-slate-800/60 p-6 border border-cyan-500/30">
-              <h3 class="font-semibold text-white">Pricing</h3>
-              <p class="mt-2 text-sm text-slate-300">
-                Freemium (1 connector, manual rotation). Pro at $10K/yr with unlimited connectors & automation. Add a $15K white-label for compliance partners. Target 600 customers for $6-8M ARR, up to $2.4M from upsells.
-              </p>
-            </article>
-          </div>
-          <div class="rounded-3xl bg-slate-800/70 p-6 border border-white/10 space-y-4">
-            <h3 class="text-xl font-semibold text-white">Go-to-Market (First 100 Customers)</h3>
-            <p class="text-sm text-slate-300">
-              Launch the "Credential Cleanroom" content series referencing Visa and 42Crunch data. Offer a 48-hour Betawhite glove test. Partner with compliance players and pitch to 200 digital lenders with a risk reduction demo. Provide referrals and community loops (Stripe, Plaid, MassChallenge 2026 cohort).
-            </p>
-            <p class="text-sm text-slate-300">
-              Metrics: #keys discovered, #rotations, MTTR for rotations, #compliance reports downloaded.</p>
-          </div>
-        </div>
-      </section>
-      <section id="waitlist" class="px-6 py-16">
-        <div class="max-w-4xl mx-auto bg-gradient-to-br from-cyan-500/10 to-slate-900 border border-white/10 rounded-3xl p-10 text-center">
-          <h3 class="text-3xl font-bold text-white">Secure your place in the API Key Guardian beta</h3>
-          <p class="mt-4 text-slate-300">
-            Enter your email and a few quick notes. We will fire up the Credential Cleanroom audit, rotate a risky key, and share the compliance-ready PDF within 48 hours.
-          </p>
+      <section id="waitlist" class="px-6 py-16 bg-slate-900/70">
+        <div class="max-w-5xl mx-auto p-10 bg-gradient-to-br from-cyan-500/10 to-slate-900 border border-white/10 rounded-3xl text-center">
+          <h3 class="text-3xl font-bold text-white">Waitlist</h3>
+          <p class="mt-4 text-slate-300">Pilot the LedgerLink Credential Cleanroom and receive a compliance-ready PDF referencing BDO FinTech Predictions 2026, Visa Payments Outlook 2026, Stripe Partner Community.</p>
           <form class="mt-6 flex flex-col sm:flex-row gap-3" action="https://formspree.io/f/yourform" method="POST">
             <input type="email" name="email" required placeholder="Founder@fintech.com" class="flex-1 px-5 py-3 rounded-full text-slate-900" />
             <button type="submit" class="px-6 py-3 rounded-full bg-cyan-500 text-slate-900 font-semibold">Join waitlist</button>
           </form>
-          <p class="mt-3 text-xs uppercase tracking-[0.4em] text-slate-500">No paperwork • Real-time rotation demo</p>
         </div>
       </section>
     </main>
-    <footer class="bg-slate-900/80 border-t border-white/5">
-      <div class="max-w-6xl mx-auto px-6 py-8 grid gap-6 md:grid-cols-3">
-        <div>
-          <h4 class="text-sm font-semibold text-white tracking-[0.4em]">API KEY GUARDIAN</h4>
-          <p class="mt-2 text-xs text-slate-400">Micro-SaaS for credential hygiene in FinTech. Built lean, launched fast.</p>
-        </div>
-        <div>
-          <p class="text-xs text-slate-500">Citations:</p>
-          <ul class="mt-2 text-xs text-slate-400 space-y-1">
-            <li>BDO 2026 FinTech predictions</li>
-            <li>Visa 2026 payment trends</li>
-            <li>42Crunch API security report 2026</li>
-            <li>MarketsandMarkets / KBV Research</li>
-          </ul>
-        </div>
-        <div class="text-xs text-slate-500">
-          <p>Repository: <a href="https://github.com/mohdgazyanii235/api-key-guardian" class="text-cyan-300">/api-key-guardian</a></p>
-          <p>Pages: <a href="https://mohdgazyanii235.github.io/api-key-guardian/" class="text-cyan-300">Live site</a></p>
-        </div>
+    <footer class="bg-slate-900/80 border-t border-white/5 py-8 text-xs text-slate-500">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
+        <span>Sources: BDO FinTech Predictions 2026, Visa Payments Outlook 2026, Stripe Partner Community</span>
+        <span>Repo: <a href="https://github.com/mohdgazyanii235/api-key-guardian" class="text-cyan-300">mohdgazyanii235/api-key-guardian</a></span>
       </div>
-      <div class="border-t border-white/5 mt-4 text-center text-xs text-slate-600 py-4">© 2026 API Key Guardian. Built for founders who move faster than SOCs.</div>
     </footer>
   </body>
 </html>
